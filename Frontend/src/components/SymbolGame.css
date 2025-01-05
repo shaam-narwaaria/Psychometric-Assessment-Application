@@ -1,0 +1,213 @@
+/* Container for the Symbol Game */
+.symbol-game {
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f2f5f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading styling */
+.h2-symbolheading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Symbol grid container */
+.symbol-grid-symbol {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Symbol styling inside grid */
+.symbol-symbol {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for symbols */
+.symbol-symbol:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Paragraph styling */
+.count-paragraph-symbol {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #34495e;
+    text-align: center;
+}
+
+/* Input field and buttons container */
+.score-inputflex-symbol {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form control input styling */
+.form-control-symbol {
+    width: 80%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field focus effect */
+.form-control-symbol:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit button styling */
+.btn-symbol {
+    font-size: 18px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Secondary button styling */
+.btn-secondary-symbol {
+    background-color: #95a5a6;
+    color: #fff;
+}
+
+.btn-secondary-symbol:hover {
+    background-color: #7f8c8d;
+}
+
+/* Success button styling */
+.btn-success-symbol {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.btn-success-symbol:hover {
+    background-color: #2ecc71;
+}
+
+/* Button for "Go to Menu" */
+.btn-primary-symbol {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-primary-symbol:hover {
+    background-color: #3498db;
+}
+
+/* Results and score display */
+.results-symbolcount {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.results-symbolcount h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.results-symbolcount p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+/* Round display */
+.game-rounds-symbol {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #3498db;
+}
+
+.round-completion-symbol {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Symbol count display */
+.symbol-count-symbol {
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Input container styling */
+.input-container-symbol {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Adjusting button size */
+.btn-submit-symbol {
+    padding: 12px 24px;
+    font-size: 18px;
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Make the page responsive */
+@media (max-width: 768px) {
+    .symbol-grid-symbol {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .form-control-symbol {
+        width: 100%;
+        max-width: none;
+    }
+
+    .btn-symbol {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+

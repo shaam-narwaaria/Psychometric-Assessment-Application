@@ -1,0 +1,161 @@
+/* Main container styling */
+.arrow-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+    /* background-color: #f7fafc; */
+    font-family: 'Arial', sans-serif;
+    color: #2d3748;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.arrow-game-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2b6cb0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Game info section */
+.arrow-game-info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* Arrow sequence styling */
+.arrow-game-sequence {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4a5568;
+}
+
+/* Arrows container */
+.arrow-game-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Individual arrow styling */
+.arrow-game-arrow {
+    margin: 0 15px;
+    padding: 40px;
+    font-size: 70px;
+    border-radius: 20%;
+    background-color: #ffd966;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effects for the arrows */
+.arrow-game-arrow:hover {
+    transform: scale(1.01);
+    background-color: #ffd966;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Instruction text */
+.arrow-game-instructions {
+    font-size: 18px;
+    color: #718096;
+    margin-top: 15px;
+}
+
+/* Modal overlay for game over */
+.arrow-game-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content styling */
+.arrow-game-modal-content {
+    /* background: #fff; */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    animation: slide-down 0.4s ease;
+    width: 90%;
+    max-width: 450px;
+}
+
+/* Button styling */
+.arrow-game-start-button,
+.arrow-game-restart-button,
+.arrow-game-menu-button {
+    padding: 12px 30px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+/* Hover effect for buttons */
+.arrow-game-start-button:hover,
+.arrow-game-restart-button:hover,
+.arrow-game-menu-button:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+/* Keyframes for slide-down animation */
+@keyframes slide-down {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Progress bar */
+.arrow-game-progress-bar-container {
+    width: 80%;
+    height: 20px;
+    /* background-color: #e2e8f0; */
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.arrow-game-progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #38b2ac;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}

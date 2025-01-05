@@ -1,0 +1,84 @@
+/* InstructionsPage.css */
+.instruction-page {
+    padding: 30px;
+    background-color: #f4f6f9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.instruction-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.instruction-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    /* Reduced the gap between game sections */
+    margin-top: 10px;
+}
+
+.instruction-section {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48.5%;
+    /* Adjusted width to fit two items side by side */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.instruction-section:hover {
+    transform: scale(1.015);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.instruction-section p,
+.instruction-section ul {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.instruction-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.instruction-play-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.instruction-play-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.instruction-play-button:active {
+    transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+    .instruction-section {
+        width: 100%;
+    }
+}

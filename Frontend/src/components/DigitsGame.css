@@ -1,0 +1,195 @@
+/* General Container Styling */
+.digits-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 87vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.digits-start-screen,
+.digits-memorize-phase,
+.digits-input-section,
+.digits-game-over {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Start Screen */
+.digits-start-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.digits-start-button:hover {
+    background-color: #0056b3;
+}
+
+.digits-start-button:active {
+    transform: scale(0.95);
+}
+
+/* Memorize Phase */
+.digits-memorize-phase h2 {
+    color: #d9534f;
+}
+
+.digits-sequence {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #007bff;
+    margin-top: 15px;
+}
+
+.digits-digit {
+    margin: 0 5px;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Input Section */
+.digits-input-section input {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 80%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.digits-input-section button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.digits-input-section button:hover {
+    background-color: #218838;
+}
+
+.digits-input-section button:active {
+    transform: scale(0.95);
+}
+
+.digits-feedback {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Game Over Section */
+.digits-game-over h2 {
+    font-size: 2em;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.digits-summary-container {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.digits-summary-container p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.digits-summary-container .highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Button Container for Game Over */
+.digits-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.digits-restart-button {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #fff;
+}
+
+.digits-restart-button {
+    background-color: #28a745;
+}
+
+.digits-restart-button:hover {
+    background-color: #218838;
+}
+
+.digits-back-button {
+    background-color: #6c757d;
+}
+
+.digits-back-button:hover {
+    background-color: #5a6268;
+}
+
+.digits-restart-button:active,
+.digits-back-button:active {
+    transform: scale(0.95);
+}
+
+.balloon-game-balloon.burst {
+    background-color: #f39c12;
+    transform: scale(1.5);
+    opacity: 0;
+    animation: burstEffect 0.5s forwards;
+}

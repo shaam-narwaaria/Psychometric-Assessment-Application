@@ -1,0 +1,252 @@
+/* Main Game Grid Layout */
+.app-game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns per row */
+  gap: 40px;
+  /* Space between game cards */
+  padding: 20px;
+}
+
+.app-game-card {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.app-game-image {
+  width: 300px;
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.app-game-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.app-game-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.app-custom_button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.app-custom_button:hover {
+  background-color: #185abc;
+  transform: translateY(-3px);
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 1024px) {
+  .app-game-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .app-game-grid {
+    grid-template-columns: 1fr;
+    /* 1 column on smaller screens */
+  }
+
+  .app-game-card {
+    padding: 15px;
+    /* Reduce padding on smaller screens */
+  }
+
+  .app-game-name {
+    font-size: 16px;
+    /* Slightly smaller font on mobile */
+  }
+
+  .app-custom_button {
+    font-size: 14px;
+    /* Smaller font size for buttons */
+    padding: 8px 16px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .app-game-image {
+    max-height: 150px;
+    /* Adjust image size on mobile */
+  }
+}
+
+/* For Very Small Screens (e.g., small mobile) */
+@media (max-width: 480px) {
+  .app-game-name {
+    font-size: 14px;
+    /* Smaller font size for text on very small screens */
+  }
+
+  .app-custom_button {
+    font-size: 14px;
+    /* Consistent button size */
+    padding: 8px 12px;
+    /* Adjust padding for very small screens */
+  }
+
+  .app-game-card {
+    padding: 12px;
+    /* Reduce padding further on very small screens */
+  }
+
+  .app-game-image {
+    max-height: 120px;
+    /* Reduce image size further */
+  }
+}
+
+
+
+
+
+
+/* Main Login Page Styling */
+.app-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fb;
+}
+
+.app-login-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.app-login-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.app-input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.app-input-field:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.app-login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a73e8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.app-login-button:hover {
+  background-color: #185abc;
+  transform: translateY(-3px);
+}
+
+.app-error-message {
+  color: #e53935;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .app-login-box {
+    padding: 30px;
+  }
+
+  .app-login-header {
+    font-size: 20px;
+  }
+
+  .app-input-field {
+    font-size: 14px;
+  }
+
+  .app-login-button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* Styling for the Game Title */
+.app-game-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  color: #4179c2;
+  /* Bright blue color for the title */
+  /* text-transform: uppercase; */
+  letter-spacing: 1.5px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+  .app-game-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-game-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,265 @@
+/* General Container Styling */
+.game-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Score Display Styling */
+.score-display {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    z-index: 10;
+    /* Ensure it is on top */
+    visibility: visible;
+    display: block;
+}
+
+/* Message Display Styling */
+.message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+    max-width: 250px;
+    text-align: center;
+    z-index: 10;
+    /* Ensure it is on top */
+    visibility: visible;
+    display: block;
+}
+
+/* Game Area Styling */
+.game-area {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Source and Destination Row Styling */
+.source-row,
+.destination-row {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
+/* Source and Destination Ball Styling */
+.source,
+.destination {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.source {
+    background-color: #2c3e50;
+}
+
+.destination {
+    background-color: #34495e;
+}
+
+/* Ball Styling */
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: all 0.1s linear;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ball button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.ball button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.ball button:active {
+    transform: scale(0.95);
+}
+
+/* Game Over Message Styling */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #e74c3c;
+}
+
+.back-button:hover {
+    background-color: #c0392b;
+}
+
+/* Ball Color Variations */
+.ball[style*="red"] {
+    background-color: #e74c3c;
+}
+
+.ball[style*="blue"] {
+    background-color: #3498db;
+}
+
+.ball[style*="green"] {
+    background-color: #2ecc71;
+}
+
+.ball[style*="yellow"] {
+    background-color: #f1c40f;
+}
+
+/* Start Round Button Styling */
+button[onClick*="startNewRound"] {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #27ae60;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+button[onClick*="startNewRound"]:hover {
+    background-color: #219a52;
+}
+
+/* Play Again Button Styling */
+button[onClick*="restartGame"] {
+    background-color: #9b59b6;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+button[onClick*="restartGame"]:hover {
+    background-color: #8e44ad;
+}
+
+/* Ball Animation Styling */
+@keyframes ballMove {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.ball {
+    animation: ballMove 0.5s infinite alternate;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 10px;
+        height: 500px;
+    }
+
+    .score-display {
+        font-size: 14px;
+    }
+
+    .message {
+        font-size: 14px;
+        max-width: 200px;
+    }
+
+    .ball {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ball button {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .source,
+    .destination {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+}

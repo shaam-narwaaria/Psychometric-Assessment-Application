@@ -1,0 +1,182 @@
+/* General Styles */
+.container-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.star-search-game {
+    background-color: #fff;
+    padding: 3px;
+    /* Reduced padding for a tighter layout */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    /* Reduced max-width */
+}
+
+/* Enhanced Font Style */
+.game-instruction-star {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    /* Slightly smaller text */
+    color: #444;
+    margin-bottom: 25px;
+    /* Reduced margin */
+    font-weight: 500;
+}
+
+/* Improved Symbol Grid */
+.symbol-grid-star {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    /* Reduced size of columns */
+    grid-template-rows: repeat(4, 70px);
+    /* Reduced size of rows */
+    gap: 60px;
+    /* Smaller gap between symbols */
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 12px;
+}
+
+/* Symbol Styling */
+.symbol-star {
+    width: 70px;
+    /* Smaller symbol size */
+    height: 70px;
+    /* Smaller symbol size */
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    padding: 5px;
+    /* Reduced padding */
+    box-sizing: border-box;
+}
+
+.symbol-star:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #ffcc00;
+}
+
+/* Symbol Shapes */
+.symbol-star.circle {
+    border-radius: 50%;
+    background-color: #ff5733;
+}
+
+.symbol-star.square {
+    background-color: #3498db;
+    border-radius: 10px;
+}
+
+.symbol-star.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #2ecc71;
+}
+
+.symbol-star.diamond {
+    transform: rotate(45deg);
+    background-color: #e67e22;
+}
+
+.symbol-star.hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #9b59b6;
+}
+
+/* Game Over Screen */
+.game-over-star {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+.game-over-star h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Button Styles */
+.btn-star {
+    padding: 10px 20px;
+    /* Reduced button padding */
+    font-size: 16px;
+    /* Smaller font size */
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Game Status */
+.game-status-star {
+    font-size: 18px;
+    color: #333;
+    margin-top: 25px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .symbol-grid-star {
+        grid-template-columns: repeat(3, 60px);
+        /* Adjust for smaller screens */
+        grid-template-rows: repeat(3, 60px);
+        /* Adjust symbol size */
+    }
+
+    .symbol-star {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .symbol-grid-star {
+        grid-template-columns: repeat(2, 50px);
+        /* Even smaller symbols */
+        grid-template-rows: repeat(2, 50px);
+        /* Adjust for mobile devices */
+    }
+
+    .symbol-star {
+        width: 50px;
+        height: 50px;
+    }
+}

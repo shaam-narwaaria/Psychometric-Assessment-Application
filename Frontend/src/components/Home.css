@@ -1,0 +1,157 @@
+/* General Layout */
+.home-page-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.home-page-container-inner {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Top Navigation */
+.home-page-top-nav {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.home-page-top-nav h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.home-page-intro-text {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Games Section */
+.home-page-games-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.home-page-section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.home-page-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.home-page-game-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.home-page-game-card:hover {
+    transform: translateY(-10px);
+}
+
+.home-page-game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.home-page-game-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px;
+    color: #555;
+}
+
+.home-page-game-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Get Started Button */
+.home-page-get-started {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.home-page-custom-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.home-page-custom-button:hover {
+    background-color: #0056b3;
+}
+
+/* FAQ Section */
+.home-page-faq {
+    background-color: #f0f4f8;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.home-page-faq h2 {
+    font-size: 28px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-page-faq-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-page-faq-item h3 {
+    font-size: 20px;
+    color: #555;
+}
+
+.home-page-faq-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Section */
+.home-page-bottom-bar {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.home-page-bottom-bar p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.home-page-social-links a {
+    color: #ccc;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.home-page-social-links a:hover {
+    color: #ffffff;
+}
