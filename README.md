@@ -49,7 +49,6 @@ Before you start, ensure you have the following installed:
 4. Start the backend server:
 ```bash
 npm start  
-The backend server will start on http://localhost:5000.
 ```
 5. Navigate to the frontend folder and install dependencies:
 ```bash
