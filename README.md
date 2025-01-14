@@ -77,14 +77,6 @@ Data Visualization: Enhance result insights with charts and graphs.
 Contributing
 Contributions are welcome! To contribute:
 
-Fork the repository.
-Create a feature branch (git checkout -b feature-name).
-Commit your changes (git commit -m 'Add feature').
-Push to the branch (git push origin feature-name).
-Open a Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Contact
-Author: Shambhoolal Narwaria
-Email: snarwaria195mb@gmail.com
+- Author: Shambhoolal Narwaria
+- Email: snarwaria195mb@gmail.com
