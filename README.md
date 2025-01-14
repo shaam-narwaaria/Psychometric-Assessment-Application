@@ -33,61 +33,44 @@ Before you start, ensure you have the following installed:
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/your-username/psy-gauge.git  
-   cd psy-gauge  
-Navigate to the backend folder and install dependencies:
+   cd psy-gauge
+   ```
+2. Navigate to the backend folder and install dependencies:
 
-bash
-Copy code
-cd backend  
-npm install  
-Set up your environment variables in the backend/.env file:
+```bash
+   cd backend  
+   npm install
+```
+3. Set up your environment variables in the backend/.env file:
+   PORT=5000  
+   MONGO_URI=your-mongodb-connection-string  
+   Replace your-mongodb-connection-string with your actual MongoDB connection string.
 
-plaintext
-Copy code
-PORT=5000  
-MONGO_URI=your-mongodb-connection-string  
-Replace your-mongodb-connection-string with your actual MongoDB connection string.
-
-Start the backend server:
-
-bash
-Copy code
+4. Start the backend server:
+```bash
 npm start  
 The backend server will start on http://localhost:5000.
-
-Navigate to the frontend folder and install dependencies:
-
-bash
-Copy code
+```
+5. Navigate to the frontend folder and install dependencies:
+```bash
 cd ../frontend  
-npm install  
-Start the frontend application:
+npm install
+``` 
+6. Start the frontend application:
+```bash
+npm start
+```
 
-bash
-Copy code
-npm start  
 The frontend app will start on http://localhost:3000.
 
 Ensure both backend and frontend folders are in the same directory for local development.
 
-Usage
+## Usage
 Open your browser and visit http://localhost:3000.
 Interact with the application to explore its features.
-API Documentation
-The backend provides the following endpoints:
 
-POST /api/auth/register: Register a new user.
-POST /api/auth/login: Authenticate user credentials.
-GET /api/games: Retrieve available games and instructions.
-POST /api/assessment: Submit game results for assessment.
-Detailed API documentation can be found in the Postman collection.
 
-Screenshots
-Dashboard
-
-Interactive Game Example
-
-Future Enhancements
+## Future Enhancements
 AI Integration: Advanced psychometric analysis using machine learning models.
 Cloud Deployment: Deploy the application on AWS or Azure for global accessibility.
 New Games: Add more interactive games to diversify assessments.
