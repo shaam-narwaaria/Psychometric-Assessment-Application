@@ -31,10 +31,10 @@ Before you start, ensure you have the following installed:
 
 ## Installation and Setup  
 1. Clone the repository:  
-   ```bash  
+```bash  
    git clone https://github.com/your-username/psy-gauge.git  
    cd psy-gauge
-   ```
+```
 2. Navigate to the backend folder and install dependencies:
 
 ```bash
