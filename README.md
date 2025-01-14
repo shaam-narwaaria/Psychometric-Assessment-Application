@@ -21,14 +21,6 @@ PsyGauge is a gamified psychometric assessment platform designed to evaluate psy
 
 ---
 
-## Project Structure  
-PsyGauge/ │ ├── backend/ # Server-side code (API, database configuration, etc.) │ ├── src/ # Main backend source files │ ├── config/ # Configuration files (e.g., database, environment variables) │ ├── routes/ # API endpoints │ ├── models/ # Database models/schemas │ └── server.js # Main server file │ ├── frontend/ # Client-side code (React.js application) │ ├── src/ # Main React source files │ ├── components/ # Reusable components │ ├── pages/ # Page components │ └── App.js # Main React App component │ └── README.md # Project documentation
-
-yaml
-Copy code
-
----
-
 ## Prerequisites  
 Before you start, ensure you have the following installed:  
 - **Node.js** (v14 or higher)  
