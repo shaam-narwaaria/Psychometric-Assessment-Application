@@ -1,4 +1,4 @@
-# PsyGauge - Psychometric Assessment | IIT Roorkee  
+# Psychometric Assessment Application 
 
 PsyGauge is a gamified psychometric assessment platform designed to evaluate psychological and cognitive metrics through engaging, interactive games. The platform provides insights into user behavior by analyzing tasks such as visual search, risk-taking, recall, and decision-making. Built using the MERN stack, PsyGauge features a secure and scalable backend optimized with Bcrypt for data security.
 
