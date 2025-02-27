@@ -2,11 +2,6 @@
 
 PsyGauge is a dynamic, gamified psychometric assessment platform designed to evaluate psychological and cognitive metrics through engaging, interactive games. It provides in-depth insights into user behavior by analyzing performance in tasks such as visual search, risk-taking, recall, and decision-making. Built using the MERN stack, PsyGauge features a secure and scalable backend, fortified with Bcrypt for robust data security.
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Issues](https://img.shields.io/github/issues/your-username/psy-gauge)](https://github.com/your-username/psy-gauge/issues)
-[![GitHub Forks](https://img.shields.io/github/forks/your-username/psy-gauge)](https://github.com/your-username/psy-gauge/network/members)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/psy-gauge)](https://github.com/your-username/psy-gauge/stargazers)
-
 ---
 
 ## Features
@@ -120,9 +115,3 @@ Contributions are welcome! To contribute:
 * **Author:** Shambhoolal Narwaria
 * **Email:** snarwaria195mb@gmail.com
 * **GitHub:** [https://github.com/your-username](https://github.com/your-username)
-
----
-
-## License
-
-This project is licensed under the MIT License.
