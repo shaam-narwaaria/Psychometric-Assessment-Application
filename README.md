@@ -114,7 +114,7 @@ Contributions are welcome! To contribute:
 
 * **Author:** Shambhoolal Narwaria
 * **Email:** snarwaria195mb@gmail.com
-* **GitHub:** [https://github.com/your-username](https://github.com/your-username)
+* **GitHub:** [https://github.com/your-username](https://github.com/shaam-narwaaria)
 
 ---
 
